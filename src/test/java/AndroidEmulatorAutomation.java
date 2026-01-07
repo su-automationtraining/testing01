@@ -26,7 +26,6 @@ public class AndroidEmulatorAutomation {
         //installed app
         options.setAppPackage("io.appium.android.apis");
         options.setAppActivity("io.appium.android.apis.ApiDemos");
-
         driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
     }
 
