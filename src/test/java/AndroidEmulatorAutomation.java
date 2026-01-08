@@ -34,8 +34,10 @@ public class AndroidEmulatorAutomation {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Preference\"]")).click();
         Thread.sleep(3000);
+
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"9. Switch\"]")).click();
         Thread.sleep(3000);
+
         driver.findElement(By.xpath("(//android.widget.Switch[@resource-id=\"android:id/switch_widget\"])[1]")).click();
         Thread.sleep(2000);
     }
