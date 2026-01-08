@@ -26,6 +26,7 @@ public class AndroidEmulatorAutomation {
         //installed app
         options.setAppPackage("io.appium.android.apis");
         options.setAppActivity("io.appium.android.apis.ApiDemos");
+
         driver=new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(),options);
     }
 
@@ -33,6 +34,7 @@ public class AndroidEmulatorAutomation {
     public void Test_Text() throws InterruptedException {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Preference\"]")).click();
+
         Thread.sleep(3000);
 
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"9. Switch\"]")).click();
